@@ -15,8 +15,8 @@
 }
 
 .card {
-  width: 85%;
-  height: 74vh;
+  width: calc(375px * 0.85);
+  height: 493.58px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -25,7 +25,7 @@
   background-color: white;
   overflow: hidden;
   padding: 1rem;
-  border-radius: 1rem;
+  border-radius: 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,14 +36,18 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 4px 0px 10px 5px rgba(0, 0, 0, 0.03);
+  box-shadow: 4px 0px 10px 5px rgba(0, 0, 0, 0.03);
 }
 
 .qr-code-image {
   background-image: url("/images/image-qr-code.png");
-  border-radius: 0.75rem;
+  border-radius: 0.6rem;
   background-size: cover;
   width: 290px;
   height: 290px;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .improve-frontend-skills, .scan-qr-code {
@@ -56,7 +60,9 @@
   color: #1f3251;
   font-weight: 700;
   font-size: 20px;
-  letter-spacing: 0.5px;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  margin-bottom: 0.2rem;
 }
 
 .scan-qr-code {
@@ -65,5 +71,6 @@
   font-size: 15px;
   margin-top: 1rem;
   font-weight: 400;
+  letter-spacing: 0.2px;
 }
 /*# sourceMappingURL=style.css.map */
